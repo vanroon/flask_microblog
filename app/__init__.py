@@ -10,6 +10,7 @@ import os
 from flask_bootstrap import Bootstrap
 from flask_moment import Moment
 from flask_babel import Babel, lazy_gettext as _l
+from app.errors import bp as errors_bp
 
 app = Flask(__name__)
 app.config.from_object(Config)
@@ -22,6 +23,7 @@ mail = Mail(app)
 bootstrap = Bootstrap(app)
 moment = Moment(app)
 babel = Babel(app)
+app.register_blueprint(errors_bp)
 
 
 if not app.debug:
@@ -58,4 +60,4 @@ def get_locale():
 
 
 
-from app import routes, models, errors
+from app import routes, models
