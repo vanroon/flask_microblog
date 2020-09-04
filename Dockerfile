@@ -16,6 +16,7 @@ RUN chmod +x boot.sh
 
 ENV FLASK_APP microblog.py
 
+RUN chmod -R 777 ./
 RUN chown -R microblog:microblog ./
 USER microblog
 
