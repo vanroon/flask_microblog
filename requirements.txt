@@ -26,7 +26,7 @@ MarkupSafe==1.1.1
 more-itertools==7.0.0
 pluggy==0.9.0
 py==1.8.0
-PyJWT==1.5.3
+PyJWT==2.4.0
 pyparsing==2.4.0
 pytest==4.4.1
 python-dateutil==2.6.1
